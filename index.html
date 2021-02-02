@@ -16,10 +16,19 @@
       href="style.css" />
   <title>Work Day Scheduler</title>
 </head>
-<body>
+<<body onload="startTime()">
     <header class="jumbotron">
         <h1 class="display-2">Work Day Scheduler</h1>
         <p class="lead">Daily planner and event tracker</p>
+
+        <div id="clockdate">
+          <div class="clockdate-wrapper">
+            <div id="clock"></div>
+            <div id="date"></div>
+          </div>
+        </div>
+        
+        
         <p id="currentDay" class="lead"></p>
     </header>
     <div class="container schedule">
@@ -161,6 +170,7 @@
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
       <script src="https://momentjs.com/downloads/moment.min.js"></script>
+      <script src="javascript.js"></script>
         
      </body>
 </html>
