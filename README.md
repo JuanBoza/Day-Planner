@@ -1,13 +1,14 @@
 # Work Day Planner
+  This daily planner allows a user to view the current date and time, input information that is  that is then stored in local storage, and 
 
-# Project goal 
-* This simple calender allows a person to write down and save daily goals or chores serving as a simple to-do-list. 
 
-# Technologies Used 
-* Visual Studio code 
-* Github 
-* Slack
-* Zoom.us 
+# Technology used 
+  * HTML 
+  * CSS 
+  * Javascript
 
-# Links to Site 
- *https://github.com/JuanBoza/Work-day-planner-
+# Url  
+ * Github Repository: https://github.com/JuanBoza/Work-day-planner-
+ * Deployed application:
+ 
+# Screenshots
