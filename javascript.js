@@ -13,7 +13,7 @@ function startTime() {
 }
 // current date 
 
-// local storage attempt
+// local storage for 5am thru 12pm works
 
 var saveBtn = document.querySelectorAll("button");
 
@@ -28,9 +28,6 @@ function localStorageFunction() {
     $("textarea")[5].value = localStorage.getItem("textarea6");
     $("textarea")[6].value = localStorage.getItem("textarea7");
     $("textarea")[7].value = localStorage.getItem("textarea8");
-    $("textarea")[8].value = localStorage.getItem("textarea9");
-    
-   
 } 
 
 $("button").on("click", function(event) { 
@@ -44,7 +41,6 @@ $("button").on("click", function(event) {
     var textArea7 = $("textarea")[6].value; 
     var textArea8 = $("textarea")[7].value; 
     
-
     localStorage.setItem("textarea1", textArea1);
     localStorage.setItem("textarea2", textArea2);
     localStorage.setItem("textarea3", textArea3);
@@ -53,6 +49,7 @@ $("button").on("click", function(event) {
     localStorage.setItem("textarea6", textArea6);
     localStorage.setItem("textarea7", textArea7);
     localStorage.setItem("textarea8", textArea8);
+    
 }); 
 
-// local storage attempt
+// local storage for 5am thru 12pm works 
