@@ -13,6 +13,10 @@ function startTime() {
 }
 // current date 
 
+// local storage attempt
+
+var saveBtn = document.querySelectorAll("button");
+
 localStorageFunction();
 
 function localStorageFunction() {
@@ -21,8 +25,14 @@ function localStorageFunction() {
     $("textarea")[2].value = localStorage.getItem("textarea3");
     $("textarea")[3].value = localStorage.getItem("textarea4");
     $("textarea")[4].value = localStorage.getItem("textarea4");
-    $("textarea")[5].value = localStorage.getItem("textarea6");
-    $("textarea")[6].value = localStorage.getItem("textarea7");
-    $("textarea")[7].value = localStorage.getItem("textarea8");
-    $("textarea")[8].value = localStorage.getItem("textarea9");
+   
 } 
+
+$("button").on("click", function(event) { 
+    event.preventDefault(); 
+    var textArea1 = $("textarea")[0].value;
+
+    localStorage.setItem("textarea1", textArea1);
+}); 
+
+// local storage attempt
