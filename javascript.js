@@ -1,5 +1,5 @@
 
-// current date 
+/* current date 
 function startTime() {
     var today = new Date();
     var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -11,9 +11,15 @@ function startTime() {
     var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
     document.getElementById("date").innerHTML = date;
 }
-// current date 
+ current date */ 
 
 // local storage for 5am thru 12pm works
+
+let m = moment(); 
+
+
+
+
 
 var saveBtn = document.querySelectorAll("button");
 
