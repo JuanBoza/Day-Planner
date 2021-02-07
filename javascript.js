@@ -1,33 +1,26 @@
 
-/* current date 
-function startTime() {
-    var today = new Date();
-    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    var curWeekDay = days[today.getDay()];
-    var curDay = today.getDate();
-    var curMonth = months[today.getMonth()];
-    var curYear = today.getFullYear();
-    var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
-    document.getElementById("date").innerHTML = date;
-}
- current date */ 
+/* Optional Date formats 
 
-// local storage for 5am thru 12pm works
-
-/* const m = moment(); 
-
+const m = moment(); 
 console.log(m.toString()); 
 console.log(m.format("[The current date and time is] dddd MMM Mo YYYY")); 
 console.log(m.format("L")); 
-
-const eventMoment = moment(); 
 console.log(eventMoment); 
+
 */ 
+
+// Moment.js date 
 
 var todayDate = moment().format('dddd, MMM Do YYYY'); 
 $("#currentDay").html(todayDate); 
 
+var currentTime = moment().format("LT");
+$("#currentTime").append(currentTime); 
+
+
+// Moment.js Date 
+
+// Local storage function 
 
 localStorageFunction();
 
@@ -64,4 +57,6 @@ $("button").on("click", function(event) {
     
 }); 
 
-// local storage for 5am thru 12pm works 
+
+// $(".time-block").each(function ()
+
