@@ -8,16 +8,20 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
   <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" type="text/javascript"></script>
   <title>Work Day Scheduler</title>
 </head>
 
 <body>
+  <div id="Moment">this</div> 
   <header class="jumbotron">
     <h1 class="display-2">Work Day Scheduler</h1>
+    <div id="Moment"></div>
         <p class="lead">Daily planner and event tracker</p>
-        <div id ="moment"></div>
+        <h2>Moment Date</h2>
+<!-- container for Moment.js output -->
+<div id="currentDay">rr</div>
 
-        <!--date--> <div id="date"></div>
   </header>
 
     <div class="container schedule">
@@ -82,7 +86,7 @@
      
       </div>
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" type="text/javascript"></script>
       <script src="javascript.js"></script>
       <script src="moment/moment.min.js"></script>
      </body>

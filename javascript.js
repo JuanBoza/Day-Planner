@@ -15,13 +15,19 @@ function startTime() {
 
 // local storage for 5am thru 12pm works
 
-let m = moment(); 
+/* const m = moment(); 
 
+console.log(m.toString()); 
+console.log(m.format("[The current date and time is] dddd MMM Mo YYYY")); 
+console.log(m.format("L")); 
 
+const eventMoment = moment(); 
+console.log(eventMoment); 
+*/ 
 
+var todayDate = moment().format('dddd, MMM Do YYYY'); 
+$("#currentDay").html(todayDate); 
 
-
-var saveBtn = document.querySelectorAll("button");
 
 localStorageFunction();
 
