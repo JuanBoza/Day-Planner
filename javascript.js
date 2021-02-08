@@ -9,18 +9,30 @@ console.log(eventMoment);
 
 */ 
 
-// Moment.js date 
-
 var todayDate = moment().format('dddd, MMM Do YYYY'); 
 $("#currentDay").html(todayDate); 
 
 var currentTime = moment().format("LT");
 $("#currentTime").append(currentTime); 
 
+$(".time-row").each(function () {
+    var blockTime = parseInt($(this).attr("id"));
+    var currentHour = moment().hours();
+    
+    if ( blockTime < currentHour) {
+      $(this).addClass("past");
+    } 
+    else if (blockTime === currentHour) {
+      $(this).removeClass("past");
+      $(this).addClass("present");
+    } 
+    else {
+      $(this).removeClass("past");
+      $(this).removeClass("present");
+      $(this).addClass("future");
+    }
+  });
 
-// Moment.js Date 
-
-// Local storage function 
 
 localStorageFunction();
 
@@ -58,5 +70,10 @@ $("button").on("click", function(event) {
 }); 
 
 
-// $(".time-block").each(function ()
+
+
+
+
+
+
 
