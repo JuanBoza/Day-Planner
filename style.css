@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color:rgb(173, 192, 218)
 }
 
 textarea{
@@ -9,7 +10,6 @@ textarea{
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
   padding: 10px;
 }
 
@@ -18,12 +18,23 @@ textarea{
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+
 }
 
 .description{
   white-space: pre-wrap;
 }
+
+#currentDay {
+  font-size: 50px; 
+}
+
+#currentTime {
+  font-size: 40px; 
+  padding: 20px; 
+
+}
+
 
 .time-block{
   text-align: center;
@@ -35,17 +46,23 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 3px solid rgb(88, 85, 85) ;
+  border-left: 3px solid rgb(88, 85, 85) ; 
+  border-right: 3px solid rgb(88, 85, 85) ; 
+  border-radius: 8px;
   
 }
 
 .hour {
   background-color:rgb(100, 159, 236) ;
   color: #000000;
-  border-top: 3px solid  #000000;
+  border-top: 2px solid  black ;
+  border-right: 2px solid black;
   text-align: center; 
   padding-top: 30px;
   font-size:20px; 
+  border-radius: 8px;
+
 }
 
 .past {
@@ -59,21 +76,23 @@ textarea{
 }
 
 .future {
-  background-color: #2db633;
+  background-color: #77af7a;
   color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  border-left: 2px solid black;
+  border-top: 2px solid  black;
+  background-color: rgb(100, 159, 236);
   color: white;
+  cursor: pointer; 
+  border-radius: 4px;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+ 
 }
 
 
